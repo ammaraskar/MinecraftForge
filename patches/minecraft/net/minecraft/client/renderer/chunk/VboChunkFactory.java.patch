@@ -5,7 +5,7 @@
  public class VboChunkFactory implements IRenderChunkFactory
  {
 -    public RenderChunk func_189565_a(World p_189565_1_, RenderGlobal p_189565_2_, int p_189565_3_)
-+    public RenderChunk create(World p_189565_1_, RenderGlobal p_189565_2_, int p_189565_3_, int chunkGlobalIndex, int chunkCount)
++    public RenderChunk create(World p_189565_1_, RenderGlobal p_189565_2_, int p_189565_3_, int chunkCount)
      {
          return new RenderChunk(p_189565_1_, p_189565_2_, p_189565_3_);
      }
