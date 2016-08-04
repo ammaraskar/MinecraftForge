@@ -1,0 +1,11 @@
+--- ../src-base/minecraft/net/minecraft/client/renderer/ViewFrustum.java
++++ ../src-work/minecraft/net/minecraft/client/renderer/ViewFrustum.java
+@@ -40,7 +40,7 @@
+                 for (int i1 = 0; i1 < this.field_178166_e; ++i1)
+                 {
+                     int j1 = (i1 * this.field_178168_c + l) * this.field_178165_d + k;
+-                    this.field_178164_f[j1] = p_178158_1_.func_189565_a(this.field_178167_b, this.field_178169_a, j++);
++                    this.field_178164_f[j1] = p_178158_1_.create(this.field_178167_b, this.field_178169_a, j++, j1, i);
+                     this.field_178164_f[j1].func_189562_a(k * 16, l * 16, i1 * 16);
+                 }
+             }

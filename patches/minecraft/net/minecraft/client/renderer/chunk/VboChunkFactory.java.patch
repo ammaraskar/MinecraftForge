@@ -1,0 +1,11 @@
+--- ../src-base/minecraft/net/minecraft/client/renderer/chunk/VboChunkFactory.java
++++ ../src-work/minecraft/net/minecraft/client/renderer/chunk/VboChunkFactory.java
+@@ -8,7 +8,7 @@
+ @SideOnly(Side.CLIENT)
+ public class VboChunkFactory implements IRenderChunkFactory
+ {
+-    public RenderChunk func_189565_a(World p_189565_1_, RenderGlobal p_189565_2_, int p_189565_3_)
++    public RenderChunk create(World p_189565_1_, RenderGlobal p_189565_2_, int p_189565_3_, int chunkGlobalIndex, int chunkCount)
+     {
+         return new RenderChunk(p_189565_1_, p_189565_2_, p_189565_3_);
+     }

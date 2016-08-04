@@ -1,0 +1,9 @@
+--- ../src-base/minecraft/net/minecraft/client/renderer/chunk/IRenderChunkFactory.java
++++ ../src-work/minecraft/net/minecraft/client/renderer/chunk/IRenderChunkFactory.java
+@@ -8,5 +8,5 @@
+ @SideOnly(Side.CLIENT)
+ public interface IRenderChunkFactory
+ {
+-    RenderChunk func_189565_a(World p_189565_1_, RenderGlobal p_189565_2_, int p_189565_3_);
++    RenderChunk create(World p_189565_1_, RenderGlobal p_189565_2_, int p_189565_3_, int chunkGlobalIndex, int chunkCount);
+ }
